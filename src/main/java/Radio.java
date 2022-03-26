@@ -55,6 +55,7 @@ public class Radio {
         }
 
     }
+
     public void setPrevStation() {
 
         if (currentStation > minStation) {
@@ -98,6 +99,7 @@ public class Radio {
         }
 
     }
+
     public void setPrevVolume() {
 
         if (currentVolume > minVolume) {

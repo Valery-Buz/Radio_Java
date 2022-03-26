@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class RadioTest {
     Radio radio = new Radio();
 
-
     @Test
     void setNumberOfStations() {
         Radio radio = new Radio(20);
@@ -17,9 +16,10 @@ public class RadioTest {
         assertEquals(expected, actual);
 
     }
+
     @Test
     void shouldShowTheNumberOfStations() {
-        Radio radio= new Radio();
+        Radio radio = new Radio();
 
         int expected = 10;
         int actual = radio.getNumberOfStations();
@@ -77,6 +77,7 @@ public class RadioTest {
         assertEquals(expected, actual);
 
     }
+
     @Test
     void setNextStation() {
 
@@ -101,6 +102,7 @@ public class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void setPrevStation() {
 
@@ -124,7 +126,6 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
 
         assertEquals(expected, actual);
-
     }
 
     @Test
@@ -165,6 +166,7 @@ public class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void setNextVolume() {
 
@@ -190,6 +192,7 @@ public class RadioTest {
 
         assertEquals(expected, actual);
     }
+
     @Test
     void setPrevVolume() {
 
