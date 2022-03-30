@@ -19,6 +19,11 @@ public class Radio {
         return numberOfStations;
     }
 
+    public void setNumberOfStations(int numberOfStations) {
+        this.numberOfStations = numberOfStations;
+    }
+
+
     public int getCurrentStation() {
         return currentStation;
     }
