@@ -7,13 +7,12 @@ public class RadioTest {
     @Test
     void setNumberOfStations() {
         Radio radio = new Radio(20);
-        radio.setNumberOfStations(10);
+        radio.setCurrentStation(15);
 
-        int expected = 10;
-        int actual = radio.getNumberOfStations();
+        int expected = 15;
+        int actual = radio.getCurrentStation();
 
         assertEquals(expected, actual);
-
     }
 
     @Test

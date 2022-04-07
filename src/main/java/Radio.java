@@ -29,12 +29,11 @@ public class Radio {
     }
 
     public void setCurrentStation(int currentStation) {
-
-        if (currentStation < minStation) {
-            currentStation = maxStation;
+        if (currentStation >= numberOfStations) {
+            return;
         }
-        if (currentStation > maxStation) {
-            currentStation = minStation;
+        if (currentStation <= 0) {
+            return;
         }
 
         this.currentStation = currentStation;
